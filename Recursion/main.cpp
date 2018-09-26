@@ -2,7 +2,12 @@
 #include "fibonacci.h"
 int main(int argc, char const *argv[])
 {
-  std::cout << fibonacci(10) << std::endl;
+
+  for (int i = 0; i < 10; i++)
+  {
+    std::cout << fibonacci(i) << std::endl;
+  }
+
   system("pause");
   return 0;
 }
