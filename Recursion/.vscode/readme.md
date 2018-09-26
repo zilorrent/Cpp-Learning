@@ -1,8 +1,8 @@
 # Cpp Build and Run 
 - [Cpp Build and Run](#cpp-build-and-run)
-  - [**Run Build Tasks**](#run-build-tasks)
-  - [**Build Solution**](#build-solution)
-  - [**Settings**](#settings)
+    - [**Run Build Tasks**](#run-build-tasks)
+    - [**Build Solution**](#build-solution)
+    - [**C Cpp Properties**](#c-cpp-properties)
 
 ## **Run Build Tasks**
 **Save as** *tasks.json*
@@ -42,36 +42,27 @@
 }
 ```
 
-## **Settings**
-
-**Save as** *settings.json*
+## **C Cpp Properties**
 ```json
 {
-    "files.associations": {
-        "typeinfo": "cpp",
-        "*.tcc": "cpp",
-        "cctype": "cpp",
-        "clocale": "cpp",
-        "cmath": "cpp",
-        "cstdint": "cpp",
-        "cstdio": "cpp",
-        "cstdlib": "cpp",
-        "cwchar": "cpp",
-        "cwctype": "cpp",
-        "exception": "cpp",
-        "initializer_list": "cpp",
-        "iosfwd": "cpp",
-        "iostream": "cpp",
-        "istream": "cpp",
-        "limits": "cpp",
-        "new": "cpp",
-        "ostream": "cpp",
-        "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "string_view": "cpp",
-        "system_error": "cpp",
-        "type_traits": "cpp"
-    },
-    "C_Cpp.intelliSenseEngineFallback": "Disabled"
+    "configurations": [{
+        "name": "Win32",
+        "includePath": [
+            "${workspaceFolder}/**",
+            "E:/_Programming/MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++",
+            "E:/_Programming/MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32",
+            "E:/_Programming/MinGW-w64/mingw32/i686-w64-mingw32/include"
+        ],
+        "defines": [
+            "_DEBUG",
+            "UNICODE",
+            "_UNICODE"
+        ],
+        "compilerPath": "E:/_Programming/MinGW-w64/mingw32/bin/gcc.exe",
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "msvc-x64"
+    }],
+    "version": 4
 }
 ```

@@ -2,7 +2,10 @@
     "configurations": [{
         "name": "Win32",
         "includePath": [
-            "${workspaceFolder}/**"
+            "${workspaceFolder}/**",
+            "E:/_Programming/MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++",
+            "E:/_Programming/MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32",
+            "E:/_Programming/MinGW-w64/mingw32/i686-w64-mingw32/include"
         ],
         "defines": [
             "_DEBUG",
